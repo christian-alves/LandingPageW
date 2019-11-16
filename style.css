@@ -1,0 +1,50 @@
+body,html{
+    background-color:black;
+    scroll-behavior: smooth;
+}
+
+
+
+.navcenter{
+    align-items:center;
+
+}
+
+.navcenter a{
+    color:white;
+    font-size:20px;
+    margin-left:10px;
+    margin-right:10px;
+    font-weight:700;
+}
+
+.banner img{
+    width:100%;
+}
+
+.marginsobre{
+    margin-top:100px;
+    margin-bottom:100px;
+}
+
+.marginbot{
+margin-bottom:100px;
+margin-top:20px;
+}
+
+
+
+
+@media (max-width: 1020px){
+    #textosobre{
+        margin-top:50px;
+    }
+
+    #aplica{
+        margin-top:50px;
+        margin-bottom:50px;
+    }
+
+
+
+}

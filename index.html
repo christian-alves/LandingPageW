@@ -1,0 +1,178 @@
+<?php session_start(); ?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://use.fontawesome.com/a25eb05762.js"></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Workshop Galdino</title>
+    </head>
+    <body>
+
+        <nav class="navbar navbar-expand-lg mb-2">
+                <button class="ml-auto navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <i class="fa fa-bars text-white"  aria-hidden="true"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav m-auto navcenter">
+                    <a class="nav-item nav-link active" href="#sobre">ARTISTA <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="#aplica">TEMA</a>
+                    <a class="navbar-brand mx-5" href="#"><img height="100px" width="100px" src="img/logos.png"></a>
+                    <a class="nav-item nav-link" href="#participe">PARTICIPE</a>
+                    <a id="regulamento" class="nav-item nav-link text-white" style="cursor:pointer" data-target="#confirm" data-toggle="modal">FAQ</a>
+                  </div>
+                </div>
+        </nav>
+
+        <div class="banner">
+            <img id="desktop" class="d-none d-lg-block" src="img/banner-workshop-galdino.jpg">
+            <img id="mobile" class="d-lg-none" style="border-bottom: 3px solid #e9b803" src="img/banner-workshop-galdin-mobile.jpeg">
+        </div>
+        <div id="sobre"  class="container d-sm-block-flex d-lg-flex marginsobre ">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 d-flex justify-content-center align-self-center">
+              <img style="border-radius:200px; border:4px solid #e9b803;" width="250" height="250" src="img/avatar-galdino-workshop.jpg">
+            </div>
+            <div id="textosobre" class="col-12 col-sm-12 col-md-12 col-lg-8 align-self-center text-center text-white">
+              <h1>Sobre Fabrício Galdino</h1>
+              <p>
+                Fabrício Galdino, mais conhecido apenas como Galdino, é do Guarujá (São Paulo). O artista é um ex cabeleireiro e auto didata, superou todas as expectativas ao mostrar que conhecimento Anatômico e Expressão podem superar qualquer técnica de desenho. A 4 anos consecutivos vem se consagrando nacionalmente e internacionalmente com mais de 47 prêmios, dentre estes, estão mais de 20 premiações de melhor trabalho do evento.
+                "A tatuagem me trouxe muitas histórias, amigos, responsabilidades e respeito de grandes artistas, batalho para que a arte seja mais valorizada em nosso país, o que me motiva é ensinar as gerações de forma como gostaria que tivessem me ensinado."
+                São mais de 27 Workshops que trouxeram a experiência essencial no desenvolvimento deste Super Workshop de Aplicação Anatômica.
+                Você não vai perder né Monstro?!!
+              </p>
+            </div>  
+              
+        </div>
+        <div class="container d-sm-block-flex d-lg-flex marginsobre ">
+            <div class="col-12 d-flex d-lg-none justify-content-center">
+                <img style="border-radius:200px; border:4px solid #e9b803;" width="250" height="250" src="img/poseidon.jpeg">
+              </div> 
+        <div id="aplica" class="col-12 col-sm-12 col-md-12 col-lg-8 align-self-center text-center  text-white">
+          <h1>Aplicação Anatômica</h1>
+          <p>
+            Aplicação Anatômica é um método desenvolvido por Fabrício Galdino para construção de uma tatuagem realista.
+            A técnica se baseia em 3 pilares criados pelo artista são eles: 
+            Estrutura,
+            Refinamento,
+            Acabamento.
+            Tudo focado em Simplicidade de execução, Objetividade na Criação E Segurança na Aplicação do trabalho
+            Nesse work você irá aprender desde onde iniciar um rosto, quais os estilos de aplicação, locais onde aplicar técnicas, planejamento, dimensões de um desenho, geometria de uma face.
+            Tudo o que você precisa conhecer para uma execução brilhante e bem aplicada, do início ao fim.
+          </p>
+        </div> 
+        <div class="col-12 col-sm-12 col-md-12 col-lg-4 d-none d-lg-flex  justify-content-center">
+          <img style="border-radius:300px; border:4px solid #e9b803;" width="250" height="250" src="img/poseidon.jpeg">
+        </div> 
+       
+        </div>
+        <h1 class="text-center" style="color:#e9b803; font-weight:800">VEM MONSTRO</h1>
+      <div class="container marginbot justify-content-center d-flex">
+        
+        <form id="participe" method="POST" >
+          <div class="form-row">
+            <div class="form-group col-md-6">
+            
+              <input type="text" class="form-control" value="" id="nome" name="nome" placeholder="Nome" required>
+            </div>
+            <div class="form-group col-md-6">
+          
+              <input type="text" class="form-control" value="" id="cpf" name="cpf" placeholder="CPF" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-4">
+     
+              <input type="tel" class="form-control"value="" id="telefone" name="telefone" placeholder="Telefone" required>
+            </div>
+            <div class="form-group col-md-4">
+
+              <input type="email" class="form-control" value="" id="email" name="email" placeholder="E-mail" required>
+            </div>
+            <div class="form-group col-md-4">
+
+              <input type="text" class="form-control" value="" id="estudio" name="estudio" placeholder="Estúdio">
+            </div>
+         </div> 
+         <a id="envia" mp-mode="dftl" href="https://www.mercadopago.com.br/checkout/v1/redirect?pref_id=397146657-b4f75fca-ee35-4e8d-9041-a11acdedeb3a" name="MP-payButton" class='justify-content-center d-flex btn btn-primary mt-3' style="border:none; background-color:#e9b803; color:black; font-weight:700; max-width:700px">PAGAR</a>
+        </form>
+      </div>
+
+        
+
+      <div class="modal fade" id="confirm" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content" style="background-color:#1c1c1f">
+                  <div class="modal-header">
+                    <div class="justify-content-center d-flex m-auto">
+                       <img src="img/logos.png" height="50" width="50" >
+                     
+                    </div>
+                      </div>
+                  <div class="modal-body text-white">
+                      <p> Quando?
+                        <br>
+                        <br>
+                          QUINTA-FEIRA, 24/10 das 10h as 17hs
+                        <br>
+                        <br>
+                          Onde vai ser?
+                          <br>
+                          <br>
+                          Tattoo Week 2019, no São Paulo Expo (pavilhões 6, 7 e 8)
+                        <br>
+                        <br>
+                          Investimento?
+                          <br>
+                          <br>
+                          O investimento nesse workshop é de R$ 700,00.
+                          <br> Para expositores da Tattoo Week R$500,00. 
+                          <br> Expositores entrar em contato no número (11) 4226-2157
+                          </p>
+                  </div>
+              <div class="modal-footer justify-content-center">
+              <button type="button" class="btn btn-secondary w-50" data-dismiss="modal" style="line-height:30px; font-size:15px;">Fechar</button>
+              </div>
+              </div>
+              <!-- /.modal-content -->
+          </div>
+          <!-- /.modal-dialog -->
+      </div>
+      <!-- /.modal -->
+      
+
+        
+        
+        
+
+        
+        
+        
+        <script type="text/javascript">
+        
+        (function(){function $MPC_load(){window.$MPC_loaded !== true && (function(){var s = document.createElement("script");s.type = "text/javascript";s.async = true;s.src = document.location.protocol+"//secure.mlstatic.com/mptools/render.js";var x = document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s, x);window.$MPC_loaded = true;})();}window.$MPC_loaded !== true ? (window.attachEvent ?window.attachEvent('onload', $MPC_load) : window.addEventListener('load', $MPC_load, false)) : null;})();
+        </script>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script  src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        
+        <script type="text/javascript">
+          $("#envia").click(function(e) {
+            e.preventDefault();
+            var data = $("#participe").serialize();
+          $.ajax({
+              url: "post-pay.php",
+              data: data,
+              type: 'POST',
+
+          });
+          })
+          </script>
+
+          
+
+      </body>
+</html>
